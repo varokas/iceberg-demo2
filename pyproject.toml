@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "iceberg-demo2"
+version = "0.1.0"
+description = ""
+authors = ["Varokas Panusuwan <varokas@panusuwan.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.13"
+jupyterlab = "^4.2.2"
+dagster = "^1.7.10"
+pyiceberg = {extras = ["sql-postgres", "pyarrow", "pandas", "duckdb", "s3fs"], version = "^0.6.1"}
+pyarrow = "^15"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
