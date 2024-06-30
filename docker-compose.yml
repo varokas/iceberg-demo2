@@ -41,3 +41,5 @@ services:
     image: trinodb/trino
     ports:
       - "8080:8080"
+    volumes:
+      - ./trino/iceberg.properties:/etc/trino/catalog/iceberg.properties
