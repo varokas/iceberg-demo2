@@ -36,3 +36,8 @@ services:
       - "5432:5432"  # Expose Postgres port
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
+
+  trino:
+    image: trinodb/trino
+    ports:
+      - "8080:8080"

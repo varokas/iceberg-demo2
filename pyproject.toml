@@ -16,3 +16,6 @@ pyarrow = "^15"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.dagster]
+module_name = "dagster_project"
